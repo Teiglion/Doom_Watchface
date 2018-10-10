@@ -4,7 +4,6 @@
 Window *window;
 TextLayer *textHours;
 TextLayer *textMinutes;
-TextLayer *Test;
 BitmapLayer *Image;
 GBitmap *Rock;
 
@@ -50,10 +49,6 @@ void handle_init(void)
     struct tm *current_time = localtime(&now);
     tick_timer_service_subscribe(MINUTE_UNIT, &timeLoop);
     timeLoop(current_time, MINUTE_UNIT);
-    size_t n = heap_bytes_free();
-    Test = text_layer_create(GRect(13, 100, 30, 30));
-    text_layer_set_text(Test,n);
-    layer_add_child(window_get_root_layer(window), text_layer_get_layer(Test));
     window_stack_push(window,true);
     
 }
