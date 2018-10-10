@@ -1,0 +1,47 @@
+{
+  "name": "DooM",
+  "author": "Teiglion",
+  "version": "1.1.0",
+  "keywords": ["pebble-watchface"],
+  "private": true,
+  "dependencies": {},
+
+  "pebble": {
+    "displayName": "DooM",
+    "projectType": "native",
+    "uuid": "7ee803b2-03bf-49bf-8b8f-9ff6dbdeba95",
+    "sdkVersion": "3",
+    "enableMultiJS": false,
+    "targetPlatforms": [
+      "basalt"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": {
+      "dummy": 0
+    },
+    "resources": {
+      "media": [
+{
+"type": "png",
+"name": "RockIm",
+"file": "resources/RockIm.png"
+
+},
+{
+ "menuIcon": true,
+ "type": "png",
+ "name": "RockImMenu",
+ "file": "img/RockImMenu.png"
+      },
+{
+ "characterRegex": "[0-9]",
+ "file": "fonts/DooM.ttf",
+ "name": "FONT_DooM_26",
+ "type": "font"
+}
+]
+    }
+  }
+}
